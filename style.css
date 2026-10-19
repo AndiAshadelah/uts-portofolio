@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a0f2e;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo,
+.menu a,
+.btn,
+label,
+.judul-form {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 4px solid #ff5fa2;
+}
+
+.logo {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+}
+
+.menu a {
+  font-size: 14px;
+}
+
+.menu a.aktif {
+  color: #ff5fa2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  font-size: 14px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.btn-pink {
+  background-color: #ff5fa2;
+  color: #1a0f2e;
+  box-shadow: 4px 4px 0 #ffffff;
+}
+
+.btn-putih {
+  background-color: #ffffff;
+  color: #1a0f2e;
+  border-color: #1a0f2e;
+  box-shadow: 4px 4px 0 #ff5fa2;
+}
+
+.btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #ffffff;
+}
+
+.btn-putih:hover {
+  box-shadow: 2px 2px 0 #ff5fa2;
+}
+
+.hero {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 140px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  line-height: 1.3;
+}
+
+.pink {
+  color: #ff5fa2;
+}
+
+.hero p {
+  color: #b9a4ff;
+  margin: 20px 0 30px;
+}
+
+.hero .btn {
+  margin: 0 8px;
+}
+
+.form-wrapper {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.judul-form {
+  color: #ff5fa2;
+  font-size: 32px;
+}
+
+.form-wrapper > p {
+  color: #b9a4ff;
+  font-size: 14px;
+  margin: 10px 0 30px;
+}
+
+.form-card {
+  background-color: #2a1a4a;
+  border: 3px solid #ffffff;
+  box-shadow: 8px 8px 0 #ff5fa2;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  background-color: #1a0f2e;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #b9a4ff;
+}
+
+textarea {
+  height: 90px;
+  resize: vertical;
+}
+
+.tombol-form {
+  display: flex;
+  gap: 8px;
+}
+
+.tombol-form .btn {
+  box-shadow: none;
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 70px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px 20px;
+}
+
+.ig-wrap {
+  position: relative;
+  width: 300px;
+}
+
+.ig-wrap::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  right: 16px;
+  bottom: 16px;
+  background-color: #ff5fa2;
+  transform: rotate(-3deg);
+}
+
+.ig-card {
+  position: relative;
+  background-color: #ffffff;
+  color: #1a0f2e;
+  border: 3px solid #1a0f2e;
+  padding: 12px;
+}
+
+.ig-atas {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 14px;
+}
+
+.ig-avatar {
+  width: 26px;
+  height: 26px;
+  background-color: #2a1a4a;
+  border: 2px solid #1a0f2e;
+}
+
+.ig-titik {
+  margin-left: auto;
+}
+
+.ig-foto {
+  width: 100%;
+  display: block;
+  image-rendering: pixelated;
+}
+
+.ig-bawah {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.ig-bawah p {
+  margin-bottom: 4px;
+}
+
+.tag {
+  color: #ff5fa2;
+}
+
+.stiker {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border: 3px solid #1a0f2e;
+}
+
+.stiker-1 {
+  background-color: #ff5fa2;
+  top: 60px;
+  right: -16px;
+  transform: rotate(12deg);
+}
+
+.stiker-2 {
+  background-color: #b9a4ff;
+  top: 200px;
+  left: -18px;
+  transform: rotate(-10deg);
+}
+
+.stiker-3 {
+  background-color: #ffffff;
+  width: 24px;
+  height: 24px;
+  top: 300px;
+  right: -12px;
+  transform: rotate(8deg);
+}
+
+.about-teks {
+  flex: 1;
+  min-width: 320px;
+  max-width: 560px;
+  text-align: left;
+}
+
+.sapaan {
+  font-family: "Pixelify Sans", sans-serif;
+  color: #ff5fa2;
+  font-size: 34px;
+}
+
+.perkenalan {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 12px 0 30px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.info-judul {
+  font-family: "Pixelify Sans", sans-serif;
+  color: #ff5fa2;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.kontak-baris {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.ikon {
+  background-color: #ffffff;
+  color: #1a0f2e;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 10px;
+  min-width: 36px;
+  padding: 4px 0;
+  text-align: center;
+}
+
+.software {
+  display: flex;
+  gap: 10px;
+}
+
+.soft {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #1a0f2e;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 16px;
+  box-shadow: 3px 3px 0 #ff5fa2;
+}
+
+.riwayat {
+  margin-bottom: 14px;
+}
+
+.tahun {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 12px;
+}
+
+.tempat {
+  font-size: 11px;
+  color: #b9a4ff;
+}
+
+.peran {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ff5fa2;
+}
+
+@media (max-width: 700px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer {
+  margin-top: 60px;
+  padding: 24px 40px;
+  border-top: 4px solid #ff5fa2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  color: #b9a4ff;
+}
+
+.sosial {
+  display: flex;
+  gap: 20px;
+}
+
+.sosial a {
+  font-family: "Pixelify Sans", sans-serif;
+  color: #ffffff;
+}
+
+.sosial a:hover {
+  color: #ff5fa2;
+}
